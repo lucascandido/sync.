@@ -1,0 +1,702 @@
+
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<style>  
+ 
+  .title {
+    color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration:none;
+  }
+  
+  .larger {
+    color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .larger-a {
+    //color:#D19160;
+    color:#538ADC;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .larger-a:hover {
+    //color:#FF0000;
+    color:#77C9F3;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: none;
+    text-decoration:underline;
+  }
+  
+  select {
+    font-family: Tahoma;
+    font-size: 11px;
+  }
+   
+  .white {
+    color:#FFFFFF;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .blue {
+    color:#3B5998;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: none;
+    text-decoration:none;
+  } 
+  
+  .red {
+    color:#FF0000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .menu {
+    color:#FFFFFF;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .menu:hover {
+    color:#77C9F3;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .alternate {
+    color:#3B5998;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .alternate:hover {
+    color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:underline;
+  }
+  
+  a {
+    //color:#D19160;
+    color:#538ADC;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+  
+  a:hover {
+    //color:#FF0000;
+    color:#77C9F3;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:underline;
+  }
+ 
+  .bordertable {
+    border-width: 1px;
+    border-color: #3B5998;
+    border-style: solid;
+  }
+ 
+  .dashedtable {
+    border-width: 1px;
+    border-color: #3B5998;
+    border-style: dashed;
+  }
+ 
+  .bottomborder {
+    border-style:solid;
+    border-color: #3B5998;
+    border-top-width:0px;
+    border-bottom-width:1px;
+    border-right-width:0px;
+    border-left-width:0px;
+  }
+ 
+  .one-column {
+    color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+    border-style:solid;
+    border-color: #3B5998;
+    border-top-width:1px;
+    border-bottom-width:0px;
+    border-right-width:1px;
+    border-left-width:1px;
+  }
+ 
+  .text {
+    font-Family: Serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+  
+  .td0 {
+    color:#000000;
+    background-color:#D9DFEA;
+    border: 0;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .td1 {
+    color:#000000;
+    background-color:#86A1CE;
+    border: 0;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }    
+ 
+  .schedule_table {
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+  }
+ 
+  .top-border {
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: #3B5998;
+  }
+  
+  .schedule {
+    color:#000000;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .border-td {
+    color:#000000;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color:#3B5998;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+  
+  td {
+    color:#000000;
+    border: 0;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+  
+  .inputtext {
+    border:double;
+    border-width:1;
+    border-color:#555555;
+    background-color:#D9DFEA;
+    font-size:11px;
+    color: #000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+  }
+  
+  .inputsubmit {
+    border-style:solid;
+    border-top-width:1px;
+    border-bottom-width:2px;
+    border-right-width:2px;
+    border-left-width:1px;
+    border-top-color:#D9DFEA;
+    border-bottom-color:#3B5998;
+    border-right-color:#3B5998;
+    border-left-color:#D9DFEA;
+    background-color:#538ADC;
+    font-family:Tahoma, arial;
+    font-size:11px;
+    color:#FFFFFF;
+    font-weight:none;
+  }
+  a img{
+  border:none !important;
+}
+#container{
+	margin:0 auto;
+	width:500px;
+	padding:40px;
+	text-align:left;
+	background-color:#fff;
+}
+
+#lightbox h2{
+	margin:0 0 1em 0;
+}
+#lightbox h3{
+	color:#FF713F;
+}
+#lightbox.done p{
+	color:#333;
+}
+
+#form{
+	text-align:left;
+	margin:25px;
+}
+#form ul{
+	list-style:none;
+}
+#form li{
+	margin:0 0 1em 0;
+}
+#form textarea{
+	width:100%;
+	height:150px;
+}
+
+#definition{
+	margin:25px;
+}
+.highlight{
+	background-color:#FEFFAF;
+}
+#lightbox{
+	display:none;
+	position: absolute;
+	top:50%;
+	left:50%;
+	z-index:9999;
+	width:400px;
+	height:200px;
+	padding:10px;
+	margin:-220px 0 0 -250px;
+	border:1px solid #fff;
+	background:#FDFCE9;
+	text-align:left;
+}
+#lightbox[id]{
+	position:fixed;
+}
+
+#overlay{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:5000;
+	background-color:#000;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+#overlay[id]{
+	position:fixed;
+}
+
+#lightbox.done #lbLoadMessage{
+	display:none;
+}
+#lightbox.done #lbContent{
+	display:block;
+}
+#lightbox.loading #lbContent{
+	display:none;
+}
+#lightbox.loading #lbLoadMessage{
+	display:block;
+}
+
+#lightbox.done img{
+	width:100%;
+	height:100%;
+}
+ 
+  <!--
+  #8EA7C5 - blue
+  #D9DFEA - grey
+  59 89 152                (#3B5998)
+  217 223 234              (#D9DFEA)
+  83 138 220 - link normal (#538ADC)
+  119 201 243 - link down  (#77C9F3)
+  -->
+  </style>
+ 
+ <script>
+ <script type="text/javascript">
+//<![CDATA[
+window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-37778798-1","ga_bs":"2"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/abv=1065777907/"},atok:"9edc63b7b178512946f4806e148c96ee",zone:"thefacebook.us",rocket:"0",apps:{"ga_key":{"ua":"UA-37778798-1","ga_bs":"2"}}}];var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="//ajax.cloudflare.com/cdn-cgi/nexp/abv=2562784428/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]>
+</script>
+<link rel="stylesheet" href="style.css"> 
+<link rel="shortcut icon" href="favicon.ico"> 
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37778798-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+ <body>
+  <div id="fb-root"></div>
+  <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId   : '',
+          session : null, // don't refetch the session when PHP already has it
+          status  : true, // check login status
+          cookie  : true, // enable cookies to allow the server to access the session
+         xfbml   : true // parse XFBML
+        });
+
+      };
+ 
+      (function() {
+        var e = document.createElement('script');
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="favicon.ico">
+<head>
+<title>Sync. | Inicio</title> 
+<script type="text/javascript">
+//<![CDATA[
+window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-37778798-1","ga_bs":"2"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/abv=1065777907/"},atok:"3185511d97cb70465b8d0e3210dd8616",zone:"thefacebook.us",rocket:"0",apps:{"ga_key":{"ua":"UA-37778798-1","ga_bs":"2"}}}];var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="//ajax.cloudflare.com/cdn-cgi/nexp/abv=2562784428/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]>
+</script>
+<link rel="stylesheet" href="style.css"> 
+<link rel="shortcut icon" href="favicon.ico"> 
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37778798-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+ <body>
+  <div id="fb-root"></div>
+  <script>
+ 
+	window.fbAsyncInit = function() {
+    FB.init({
+      appId  : '197213247091377',
+      status : true, // check login status
+      cookie : true, // enable cookies to allow the server to access the session
+      xfbml  : true  // parse XFBML
+    });
+
+	 FB.Canvas.setAutoResize();
+ 
+  };
+
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+
+
+	function sendreq(type,uid) {
+	if(type=="message")
+		mess='Eu te enviei uma mensagem,para visualizar se cadastrar no Sync.';
+	if(type=="friend")
+		mess='Eu te adicionei como amigo para aceitar se cadastrar no Sync.';
+	
+	  FB.ui({
+		method: 'apprequests',
+		message: mess,
+		to: uid,
+		data: 'senddata'
+	  },
+	   function(response) {
+		 if (response) {
+		   alert('Post was published.');
+		 } else {
+		   alert('Post was not published.');
+		 }
+	   }
+	  
+	  );
+	}
+	
+
+
+
+  </script>
+
+<center>
+<table class="bordertable" cellspacing=0 cellpadding=0 border=0 width=700>
+  <tr><td>
+      <table class="bottomborder" cellspacing=0 cellpadding=0 border=0 width=100%>
+      <tr><td width=350 bgcolor=#3B5998>
+          <img src='http://www.thefacebook.us/images/logo-left.jpg'></td>
+          <td><table cellspacing=0 cellpadding=0 border=0 width=100%><tr><td>
+          <table cellspacing=0 cellpadding=0 border=0 width=100%>
+          <tr><td><a href='register.php'><img alt='Register' src='http://oi41.tinypic.com/anbvrm.jpg' border=0></a></td>
+          <td width=100% bgcolor=#3B5998>&nbsp;</td></tr></table></td></tr>
+          <tr><td><table cellspacing=0 cellpadding=4 border=0 width=100%><tr height=21>
+          <!--<td bgcolor=#3B5998 width=10>&nbsp;</td>-->
+                     
+           		            <td bgcolor=#3B5998 valign=bottom>&nbsp;<a class="menu" href='http://www.thefacebook.us/home.php'>inicio</a></td>
+
+          <td bgcolor=#3B5998 valign=bottom>&nbsp;<a class="menu" href='http://www.thefacebook.us/search.php'>procurar</a></td>
+
+          <td bgcolor=#3B5998 valign=bottom>&nbsp;<a class="menu" href="http://www.thefacebook.us/invitefb.php">convidar</a></td>
+		  
+		  <!--<td bgcolor=#3B5998 valign=bottom>&nbsp;<a class="menu" href="http://www.thefacebook.us/posttowall.php">post&nbsp;to&nbsp;fb</a></td>-->
+		  
+		  <td bgcolor=#3B5998 valign=bottom>&nbsp;<a class="menu" href='http://www.thefacebook.us/login.php?logout=1'>[sair]</a><!--https://www.facebook.com/logout.php?next=http%3A%2F%2Fwww.thefacebook.us%2Flogin.php?logout=1&access_token=CAACzXUmJsrEBANRGTUrnb7wN5HbIFZCU7NPZAT6zMwNdiQzficdB9urFzjG50QJPe93Vb5z1YIItDjeE4OIiU4db5H9IOZAkkN774koD2tPZB5ZAomFBejWkC2LHs0mBq947kmjePbrWb5wOL2j35FAHfv0H5PT4ZD--></td>
+          </tr></table></td>
+          </tr></table>
+      </td></tr></table>
+  </td></tr>
+  <tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%>
+      <tr><td valign=top>
+      <table cellspacing=0 cellpadding=0 border=0 width=105>
+        <tr><td> 
+                      <table class="dashedtable" cellspacing=0 cellpadding=2 width=100%>
+
+              <tr>
+				<td width="15%"></td>
+				<td width="70%" align=right>
+				<p><form action="search.php">
+                  <input class="inputtext" name=name type=text style="width:85px">
+				  <br>procura&nbsp;rapida&nbsp;<input type="submit" class="inputsubmit" style="width:22px" value="ir">
+				  </form>
+				</p>
+				</td>
+				<td width="15%"></td>
+			  </tr>
+			  </table>
+			  <br>
+              <table class="dashedtable" cellspacing=0 cellpadding=10 width=100%>
+
+              <tr><td align=left style="color:#538ADC">
+
+                  <p style="color:#538ADC">
+				  <a href="profile.php">Meu perfil</a> [ <a href="editprofile.php">edit</a> ]<br>
+				   				  <a href="editfriends.php">Meus amigos</a><br>
+				  <a href="browse.php">Minha empresa</a><br>
+				  <a href="messages.php">Minhas mensagens</a>
+				  				  <br>
+				  <a href="account.php">Minha conta</a><br>
+				  <a href="accountprivacy.php">Minha privacidade</a><br>
+				
+				</p>
+
+
+                  <!--<br>-->
+
+              </td></tr></table>
+			  <br>
+			  
+			  	<div style="width:120px;height:240px;margin:10px auto;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7223204697385303";
+/* fbad3 */
+google_ad_slot = "3833389197";
+google_ad_width = 120;
+google_ad_height = 240;
+//-->
+</script>
+<script type="text/javascript"
+src="">
+</script>
+</div>
+        </td></tr>
+
+
+
+      </td></tr>
+
+      </table>
+
+      </td><td width=595 style="width:595px" valign=top>
+
+        <table class="bordertable" cellspacing=0 cellpadding=0 border=1 width=100%><tr><td>
+
+
+
+	  <br><br>
+<table cellspacing=0 cellpadding=6 border=0 width=97% align=center valign=top>
+	<tr>
+		<td width="95%" align=center valign=top>
+			
+			<center><p class='title'>[Bem-Vindo Lucas ]</p>
+			<table class='bordertable' cellspacing=0 cellpadding=0 width=100% valign=top>
+				<tr>
+					<td>
+						<table cellspacing=0 cellpadding=2 border=0 width=100%> 
+							<tr>
+								<td class='white' bgcolor=#3B5998 colspan=2>
+									Meu Perfil
+								</td>
+							</tr>
+						</table>
+
+				
+						<table cellspacing=0 cellpadding=6 border=0 width=100%>
+							<tr>
+								<td valign=middle align=center width="20%">
+									<img src='http://photos.harvardconnection.co/6795729_5379845_42113539_n.jpg'>								</td>
+								<td valign=middle align=left width="20%">
+									<table class='bordertable' cellspacing=0 cellpadding=0 width=100% valign=top>
+									
+										<tr>
+											<td>
+												<table cellspacing=0 cellpadding=2 border=0 width=100%> 
+													<tr>
+														<td>
+															<a href="profile.php">Ver&nbsp;meu&nbsp;Perfil</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+																			<tr >
+											<td>
+												<table class='bordertop' cellspacing=0 cellpadding=2 border=0 width=100%> 
+													<tr>
+														<td>
+															<a href="editfriends.php?view=ra">Ver&nbsp;Meus&nbsp;Amigos</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr >
+											<td>
+												<table class='bordertop' cellspacing=0 cellpadding=2 border=0 width=100%> 
+													<tr>
+														<td>
+															<a href="search.php?name">Procurar&nbsp;por&nbsp;pessoas</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr >
+											<td>
+												<table class='bordertop' cellspacing=0 cellpadding=2 border=0 width=100%> 
+													<tr>
+														<td>
+															<a href="browse.php">Procurar&nbsp;na minha&nbsp;empresa</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+																			</table>
+								</td>
+								<td valign=middle align=left width="45%"> 
+									Você esta conectado com  <b>0</b> classes.<br><br>Você esta conectado com <b>0</b> amigos.
+								</td>
+								<td valign=middle align=right width="10%" style="color:#538ADC">
+																		[&nbsp;<a href="editprofile.php?s=personal">adicionar&nbsp;classes</a>&nbsp;]
+																		<br><br><br><br>
+																		[&nbsp;<a href="search.php?name=+">adicionar&nbsp;amigos</a>&nbsp;] 
+																	
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			
+			
+	
+	</table>
+	<br>&nbsp;<center>
+	<table class='bordertable' cellspacing=0 cellpadding=0 width=96%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+
+  </td></tr></table>
+
+  <center>
+
+<p><a href="about.php">sobre</a>&nbsp;&nbsp;
+  <a href="contact.php">contato</a>&nbsp;&nbsp;
+  <a href="faq.php">faq</a>&nbsp;&nbsp;
+  <a href="terms.php">termos</a>&nbsp;&nbsp;
+  <a href="policy.php">privacidade</a> 
+  <br>[ Uma produção de Giovani Castilho & Lucas Candido ]
+  <br>Sync. &copy;  
+
+  </center><br>
+
+  </td></table><br></table>
+
+
+
+ 
